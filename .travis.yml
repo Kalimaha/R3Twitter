@@ -15,6 +15,3 @@ bundler_args: --binstubs=./bundler_stubs
 
 after_success:
   - coveralls
-
-notifications:
-  slack: geobricks:tBgRgJ9aLBfuCLrP4rV8iEPV

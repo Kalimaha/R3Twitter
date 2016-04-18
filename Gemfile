@@ -34,6 +34,13 @@ gem 'redis', '~>3.2'
 # Coveralls
 gem 'coveralls', require: false
 
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+# Font Awesome
+gem 'font-awesome-rails', '~> 4.1.0.0'
+
 # Development and Test environments.
 group :development, :test do
   gem 'byebug'
