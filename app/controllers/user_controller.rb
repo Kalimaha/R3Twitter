@@ -9,6 +9,9 @@ class UserController < ApplicationController
     @redis = Redis.new
   end
 
+  def index
+  end
+
   def flushdb
     @redis.flushdb
   end
