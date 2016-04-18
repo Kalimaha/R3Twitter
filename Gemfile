@@ -31,6 +31,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Redis
 gem 'redis', '~>3.2'
 
+# Coveralls
+gem 'coveralls', require: false
+
 # Development and Test environments.
 group :development, :test do
   gem 'byebug'

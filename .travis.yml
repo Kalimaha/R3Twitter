@@ -3,6 +3,9 @@ language: ruby
 rvm:
   - 2.2
 
+services:
+  - redis-server
+
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
