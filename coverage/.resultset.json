@@ -1,0 +1,52 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Volumes/DataSD/development/git-repositories/R3Twitter/app/controllers/user_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        10,
+        10,
+        null,
+        null,
+        1,
+        6,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Volumes/DataSD/development/git-repositories/R3Twitter/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Volumes/DataSD/development/git-repositories/R3Twitter/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Volumes/DataSD/development/git-repositories/R3Twitter/app/helpers/user_helper.rb": [
+        1,
+        null
+      ]
+    },
+    "timestamp": 1460942632
+  }
+}

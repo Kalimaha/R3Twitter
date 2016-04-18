@@ -21,4 +21,8 @@ class UserController < ApplicationController
     @redis.incr 'user_id'
   end
 
+  def create_user(user)
+    @redis.mapped_hmset(get_next_id, user)
+  end
+
 end
