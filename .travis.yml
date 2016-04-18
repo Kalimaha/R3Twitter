@@ -1,0 +1,14 @@
+language: ruby
+
+rvm:
+  - 2.2
+
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rake test
+
+bundler_args: --binstubs=./bundler_stubs
+
+after_success:
+  - coveralls
