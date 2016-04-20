@@ -25,7 +25,17 @@ class UserController < ApplicationController
   end
 
   def create_user(user)
-    @redis.mapped_hmset(get_next_id, user)
+    user_id = get_next_id
+    @redis.hset('users', user['username'], user_id)
+    @redis.mapped_hmset(user_id, user)
+  end
+
+  def exists?(username)
+    @redis.hget('users', username) != nil
+  end
+
+  def get_user_id(username)
+    @redis.hget('users', username)
   end
 
 end

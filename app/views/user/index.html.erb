@@ -1,14 +1,15 @@
 <h1>
-  R3Twitter
+  <i class="fa fa-twitter"></i> R3Twitter
+  <br>
   <small>
-    Ruby, Rails and Redis
+    Ruby, Rails, Redis
   </small>
 </h1>
 
 <hr>
 
 <div class="row">
-  <div class="col-xs-4">
+  <div class="col-xs-12 col-lg-4">
     <div class="panel panel-primary">
       <div class="panel-heading">
         <i class="fa fa-key"></i> Login
@@ -23,25 +24,43 @@
             <label for="username">Password</label>
             <input class="form-control" id="password" type="password">
           </div>
-          <button type="submit" class="btn btn-default" style="width: 100%;">
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
             Login
           </button>
         </form>
       </div>
     </div>
   </div>
-  <div class="col-xs-4 text-center">
+  <div class="col-xs-12 col-lg-4 text-center">
     <h1>
       OR
     </h1>
+    <br>
+    <br>
   </div>
-  <div class="col-xs-4">
+  <div class="col-xs-12 col-lg-4">
     <div class="panel panel-primary">
       <div class="panel-heading">
         <i class="fa fa-magic"></i> Create a New Account
       </div>
       <div class="panel-body">
-        Panel content
+        <form role="form">
+          <div class="form-group">
+            <label for="new_username">Username</label>
+            <input class="form-control" id="new_username">
+          </div>
+          <div class="form-group">
+            <label for="new_password">Password</label>
+            <input class="form-control" id="new_password" type="password">
+          </div>
+          <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input class="form-control" id="confirm_password" type="password">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Login
+          </button>
+        </form>
       </div>
     </div>
   </div>

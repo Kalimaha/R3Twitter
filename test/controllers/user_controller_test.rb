@@ -30,4 +30,15 @@ class UserControllerTest < ActionController::TestCase
     assert_equal 'OK', @ctrl.create_user(@user_2)
   end
 
+  def test_exists?
+    assert_not @ctrl.exists?(@user_1['username'])
+    @ctrl.create_user(@user_1)
+    assert @ctrl.exists?(@user_1['username'])
+  end
+
+  def test_get_user_id
+    @ctrl.create_user(@user_1)
+    assert_equal "1", @ctrl.get_user_id(@user_1['username'])
+  end
+
 end
