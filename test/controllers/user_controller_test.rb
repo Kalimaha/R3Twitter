@@ -38,7 +38,17 @@ class UserControllerTest < ActionController::TestCase
 
   def test_get_user_id
     @ctrl.create_user(@user_1)
-    assert_equal "1", @ctrl.get_user_id(@user_1['username'])
+    assert_equal '1', @ctrl.get_user_id(@user_1['username'])
+  end
+
+  def test_get_user
+    @ctrl.create_user(@user_1)
+    user_id = @ctrl.get_user_id(@user_1['username'])
+    assert_equal '1', user_id
+    user = @ctrl.get_user(user_id)
+    assert_not_nil user
+    assert_equal 'kalimaha', user['username']
+    assert_equal '12345678', user['password']
   end
 
 end

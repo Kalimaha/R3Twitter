@@ -38,4 +38,8 @@ class UserController < ApplicationController
     @redis.hget('users', username)
   end
 
+  def get_user(user_id)
+    @redis.hgetall(user_id)
+  end
+
 end
