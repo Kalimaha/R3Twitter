@@ -45,46 +45,54 @@ class UserController < ApplicationController
   end
 
   def login
-    if params[:username] == nil || params[:username].length < 1
-      flash[:error] = 'Please provide your username.'
-      redirect_to '/'
-      return
-    elsif params[:password] == nil || params[:password].length < 1
-      flash[:error] = 'Please provide your password.'
-      redirect_to '/'
-      return
-    end
-    if exists?(params[:username])
-      @user = get_user(get_user_id(params[:username]))
+    if valid_login_params?(params)
+      if exists?(params[:username])
+        @user = get_user(get_user_id(params[:username]))
+      else
+        flash[:error] = "User <i>#{params[:username]}</i> does NOT exists. Please register."
+        redirect_to '/'
+      end
     else
-      flash[:error] = "User <i>#{params[:username]}</i> does NOT exists. Please register."
+      flash[:error] = 'Please provide your username and password.'
       redirect_to '/'
     end
   end
 
+  def valid_login_params?(params)
+    params[:username] != nil &&
+    params[:username].length > 0 &&
+    params[:password] != nil &&
+    params[:password].length > 0
+  end
+
   def register
-    if params[:new_username] == nil || params[:new_username].length < 1
-      flash[:error] = 'Please provide your username.'
+    if valid_registration_params?(params)
+      user = Hash.new
+      user['username'] = params[:new_username]
+      user['password'] = params[:new_password]
+      if create_user(user) == 'OK'
+        flash[:success] = 'Registration complete, please login.'
+        redirect_to '/'
+        return
+      else
+        flash[:error] = 'Registration failed. Please try again.'
+        redirect_to '/'
+        return
+      end
+    else
+      flash[:error] = 'Please enter an username, a password, and a matching confirmation password.'
       redirect_to '/'
-      return
-    elsif params[:new_password] == nil || params[:new_password].length < 1
-      flash[:error] = 'Please provide your password.'
-      redirect_to '/'
-      return
-    elsif params[:confirm_password] == nil || params[:confirm_password].length < 1
-      flash[:error] = 'Please confirm your password.'
-      redirect_to '/'
-      return
-    elsif params[:new_password] != params[:confirm_password]
-      flash[:error] = 'Passwords do not match.'
-      redirect_to '/'
-      return
     end
-    user = Hash.new
-    user['username'] = params[:new_username]
-    user['password'] = params[:new_password]
-    flash[:success] = 'Registration complete, please login.'
-    redirect_to '/'
+  end
+
+  def valid_registration_params?(params)
+    params[:new_username] != nil &&
+    params[:new_username].length > 0 &&
+    params[:new_password] != nil &&
+    params[:new_password].length > 0 &&
+    params[:confirm_password] != nil &&
+    params[:confirm_password].length > 0 &&
+    params[:new_password] == params[:confirm_password]
   end
 
 end

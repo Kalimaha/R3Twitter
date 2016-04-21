@@ -7802,3 +7802,319 @@ Processing by Rails::InfoController#routes as HTML
   Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
   Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (15.2ms)
 Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 11:49:21 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.2ms)
+  Rendered user/_register.html.erb (0.2ms)
+  Rendered user/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 1254ms (Views: 1251.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-04-21 11:49:24 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 11:49:24 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for ::1 at 2016-04-21 11:49:36 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"kalimaha", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 11:49:36 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.1ms)
+  Rendered user/_register.html.erb (0.2ms)
+  Rendered user/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 82ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-04-21 11:49:38 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 11:49:38 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 11:50:33 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 154ms (Views: 152.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/application.self-96deb0473715372db71f9f14d90e208737d6aa9895a5a7b49fcf2fde9e686769.css?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-21 11:50:33 +1000
+
+
+Started POST "/register" for ::1 at 2016-04-21 11:50:40 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"kalimaha", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 11:50:40 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 95ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 11:52:45 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.1ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 266ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/application.self-96deb0473715372db71f9f14d90e208737d6aa9895a5a7b49fcf2fde9e686769.css?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-21 11:52:46 +1000
+
+
+Started POST "/login" for ::1 at 2016-04-21 11:52:50 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 11:52:50 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.2ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for ::1 at 2016-04-21 11:52:56 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"kalimaha", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 11:52:56 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 71ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-04-21 11:52:58 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+  Rendered user/login.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 87ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 12:00:03 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.1ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 124ms (Views: 123.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for ::1 at 2016-04-21 12:00:05 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 12:00:05 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for ::1 at 2016-04-21 12:00:11 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"orcrist", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 12:00:11 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for ::1 at 2016-04-21 12:00:19 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"orcrist", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 12:00:19 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 85ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/register" for ::1 at 2016-04-21 12:00:29 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"orcrist", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 12:00:29 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-04-21 12:00:35 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"orcrist", "password"=>"[FILTERED]"}
+  Rendered user/login.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 75ms (Views: 70.5ms | ActiveRecord: 0.0ms)

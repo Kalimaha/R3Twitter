@@ -63,6 +63,19 @@ class UserControllerTest < ActionController::TestCase
     assert_redirected_to '/'
   end
 
+  def test_valid_login_params
+    params = {}
+    assert_not @ctrl.valid_login_params?(params)
+    params = {username: ''}
+    assert_not @ctrl.valid_login_params?(params)
+    params = {password: ''}
+    assert_not @ctrl.valid_login_params?(params)
+    params = {username: '', password: ''}
+    assert_not @ctrl.valid_login_params?(params)
+    params = {username: 'kalimaha', password: '12345678'}
+    assert @ctrl.valid_login_params?(params)
+  end
+
   def test_register
     assert_generates '/register', controller: 'user', action: 'register'
     post :register
@@ -80,6 +93,21 @@ class UserControllerTest < ActionController::TestCase
     post :register, {new_username: 'kalimaha', new_password: '12345678', confirm_password: '12345678'}
     assert_redirected_to '/'
     assert_not_nil flash[:success]
+  end
+
+  def test_valid_registration_params
+    params = {}
+    assert_not @ctrl.valid_registration_params?(params)
+    params = {new_username: ''}
+    assert_not @ctrl.valid_registration_params?(params)
+    params = {new_password: ''}
+    assert_not @ctrl.valid_registration_params?(params)
+    params = {confirm_password: ''}
+    assert_not @ctrl.valid_registration_params?(params)
+    params = {new_username: 'orcrist', new_password: '20071982', confirm_password: '201071919'}
+    assert_not @ctrl.valid_registration_params?(params)
+    params = {new_username: 'orcrist', new_password: '20071982', confirm_password: '20071982'}
+    assert @ctrl.valid_registration_params?(params)
   end
 
 end
