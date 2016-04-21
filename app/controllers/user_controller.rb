@@ -45,38 +45,39 @@ class UserController < ApplicationController
   end
 
   def login
-    if params[:username].length < 1
+    if params[:username] == nil || params[:username].length < 1
       flash[:error] = 'Please provide your username.'
       redirect_to '/'
-    elsif params[:password].length < 1
+      return
+    elsif params[:password] == nil || params[:password].length < 1
       flash[:error] = 'Please provide your password.'
       redirect_to '/'
+      return
+    end
+    if exists?(params[:username])
+      @user = get_user(get_user_id(params[:username]))
     else
-      if exists?(params[:username])
-        @user = get_user(get_user_id(params[:username]))
-      else
-        flash[:error] = "User <i>#{params[:username]}</i> does NOT exists. Please register."
-        redirect_to '/'
-      end
+      flash[:error] = "User <i>#{params[:username]}</i> does NOT exists. Please register."
+      redirect_to '/'
     end
   end
 
   def register
     if params[:new_username] == nil || params[:new_username].length < 1
       flash[:error] = 'Please provide your username.'
-      redirect_to '/login'
+      redirect_to '/'
       return
     elsif params[:new_password] == nil || params[:new_password].length < 1
       flash[:error] = 'Please provide your password.'
-      redirect_to '/login'
+      redirect_to '/'
       return
     elsif params[:confirm_password] == nil || params[:confirm_password].length < 1
       flash[:error] = 'Please confirm your password.'
-      redirect_to '/login'
+      redirect_to '/'
       return
     elsif params[:new_password] != params[:confirm_password]
       flash[:error] = 'Passwords do not match.'
-      redirect_to '/login'
+      redirect_to '/'
       return
     end
     user = Hash.new
