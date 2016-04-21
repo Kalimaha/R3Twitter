@@ -1,4 +1,5 @@
 require 'redis'
+require 'date'
 
 class UserController < ApplicationController
 
@@ -100,6 +101,19 @@ class UserController < ApplicationController
     params[:confirm_password] != nil &&
     params[:confirm_password].length > 0 &&
     params[:new_password] == params[:confirm_password]
+  end
+
+  def follow(user_id, following_id)
+    @namespaced.zadd('following:' + user_id, DateTime.now.strftime('%Q'), following_id) &&
+    @namespaced.zadd('followers:' + following_id, DateTime.now.strftime('%Q'), user_id)
+  end
+
+  def get_following(user_id)
+    @namespaced.zrevrange('following:' + user_id, 0, -1)
+  end
+
+  def get_followers(user_id)
+    @namespaced.zrevrange('followers:' + user_id, 0, -1)
   end
 
 end

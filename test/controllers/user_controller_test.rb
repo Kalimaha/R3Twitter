@@ -111,4 +111,30 @@ class UserControllerTest < ActionController::TestCase
     assert @ctrl.valid_registration_params?(params)
   end
 
+  def test_follow
+    assert @ctrl.follow('42', '1')
+  end
+
+  def test_get_following
+    @ctrl.follow('42', '1')
+    @ctrl.follow('42', '3')
+    @ctrl.follow('42', '7')
+    following = @ctrl.get_following('42')
+    assert following.include? '1'
+    assert following.include? '3'
+    assert following.include? '7'
+  end
+
+  def test_get_followers
+    @ctrl.follow('42', '1')
+    @ctrl.follow('42', '3')
+    @ctrl.follow('42', '7')
+    followers = @ctrl.get_followers('1')
+    assert followers.include? '42'
+    followers = @ctrl.get_followers('3')
+    assert followers.include? '42'
+    followers = @ctrl.get_followers('7')
+    assert followers.include? '42'
+  end
+
 end
