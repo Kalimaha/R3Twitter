@@ -51,4 +51,23 @@ class UserControllerTest < ActionController::TestCase
     assert_equal '12345678', user['password']
   end
 
+  def test_login
+    assert_generates '/login', controller: 'user', action: 'login'
+  end
+
+  def test_register
+    assert_generates '/register', controller: 'user', action: 'register'
+    post :register
+    assert_redirected_to controller: 'user', action: 'login'
+    post :register, {new_username: 'kalimaha'}
+    assert_redirected_to controller: 'user', action: 'login'
+    post :register, {new_username: 'kalimaha', new_password: '12345678'}
+    assert_redirected_to controller: 'user', action: 'login'
+    post :register, {new_username: 'kalimaha', new_password: '12345678', confirm_password: '87654321'}
+    assert_redirected_to controller: 'user', action: 'login'
+    post :register, {new_username: 'kalimaha', new_password: '12345678', confirm_password: '12345678'}
+    assert_redirected_to '/'
+    assert_not_nil flash[:success]
+  end
+
 end

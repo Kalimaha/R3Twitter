@@ -45,8 +45,6 @@ class UserController < ApplicationController
   end
 
   def login
-
-    # Check input parameters.
     if params[:username].length < 1
       flash[:error] = 'Please provide your username.'
       redirect_to '/'
@@ -54,8 +52,6 @@ class UserController < ApplicationController
       flash[:error] = 'Please provide your password.'
       redirect_to '/'
     else
-      puts params[:username]
-      puts exists?(params[:username])
       if exists?(params[:username])
         @user = get_user(get_user_id(params[:username]))
       else
@@ -63,13 +59,25 @@ class UserController < ApplicationController
         redirect_to '/'
       end
     end
-
   end
 
   def register
-    if params[:new_password] != params[:confirm_password]
+    if params[:new_username] == nil || params[:new_username].length < 1
+      flash[:error] = 'Please provide your username.'
+      redirect_to '/login'
+      return
+    elsif params[:new_password] == nil || params[:new_password].length < 1
+      flash[:error] = 'Please provide your password.'
+      redirect_to '/login'
+      return
+    elsif params[:confirm_password] == nil || params[:confirm_password].length < 1
+      flash[:error] = 'Please confirm your password.'
+      redirect_to '/login'
+      return
+    elsif params[:new_password] != params[:confirm_password]
       flash[:error] = 'Passwords do not match.'
-      redirect_to '/'
+      redirect_to '/login'
+      return
     end
     user = Hash.new
     user['username'] = params[:new_username]
