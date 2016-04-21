@@ -1,0 +1,22 @@
+<h1>
+  <i class="fa fa-users"></i> Users
+</h1>
+
+<hr style="margin-top: 0;">
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Follow</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |u| %>
+      <tr>
+        <td><%= link_to u['username'], '/tweets/' + u['username'] %></td>
+        <td><%= link_to 'Follow', '/' + u['user_id'] + '/follows/' + u['user_id'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

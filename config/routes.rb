@@ -14,4 +14,8 @@ Rails.application.routes.draw do
   get '/tweets/:username/new', to: 'tweet#new'
   post '/create/tweet/:username', to: 'tweet#create'
 
+  # Users
+  get '/users/:username', to: 'user#list'
+  get '/:first_user_id/follows/:second_user_id', to: 'user#create_following'
+
 end

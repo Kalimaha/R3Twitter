@@ -1,42 +1,77 @@
 <div class="row">
-  <div class="col-lg-6 col-xs-12">
+  <div class="col-lg-8">
     <h1>
       <i class="fa fa-twitter"></i> <%= @username %>'s timeline
     </h1>
   </div>
-  <div class="col-lg-6 col-xs-12">
+  <div class="col-lg-2">
     <h1>
-      <button class="btn btn-primary pull-right" href="/tweets/new">
-        <i class="fa fa-magic"></i> New Tweet
-      </button>
+      <%= link_to '<i class="fa fa-magic"></i> New Tweet'.html_safe,
+                  '/tweets/' + @username + '/new',
+                  class: 'btn btn-primary pull-right',
+                  style: 'width: 100%;'%>
+    </h1>
+  </div>
+  <div class="col-lg-2">
+    <h1>
+      <%= link_to '<i class="fa fa-users"></i> Show Users'.html_safe,
+                  '/users/' + @username + '/',
+                  class: 'btn btn-primary pull-right',
+                  style: 'width: 100%;'%>
     </h1>
   </div>
 </div>
 
-<hr>
+<hr style="margin-top: 0;">
 
-<% if @tweets.length > 0 %>
-  <% @tweets.each do |t| %>
-    <div class="row">
-      <div class="col-lg-4 col-xs-12">&nbsp;</div>
-      <div class="col-lg-4 col-xs-12">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <%= t['username'] %>
-          </div>
-          <div class="panel-body">
-            <%= t['body'] %>
-          </div>
-          <div class="panel-footer text-right">
-            <%= Date.strptime((t['time'].to_f / 1000).to_s, '%s').strftime('%d %b %Y') %>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-xs-12">&nbsp;</div>
-    </div>
-  <% end %>
-<% else %>
-  <h2 class="text-center">
-    There are yet no tweets to display.
-  </h2>
-<% end %>
+<div class="row">
+  <div class="col-lg-4 col-xs-12">&nbsp;</div>
+  <div class="col-lg-4 col-xs-12">
+    <% if @tweets.length > 0 %>
+        <% @tweets.each do |t| %>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <i class="fa fa-twitter"></i> <%= t['username'] %>
+                  </div>
+                  <div class="panel-body">
+                    <%= t['body'] %>
+                  </div>
+                  <div class="panel-footer text-right">
+                    <%= Date.strptime((t['time'].to_f / 1000).to_s, '%s').strftime('%d %b %Y') %>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <% end %>
+    <% else %>
+        <h2 class="text-center">
+          There are yet no tweets to display.
+        </h2>
+    <% end %>
+  </div>
+  <div class="col-lg-4 col-xs-12">
+    <h2 class="text-right">
+      Following
+    </h2>
+    <hr>
+      <p class="text-right">
+        You are not following any user.
+      </p>
+    <hr>
+    <h2 class="text-right">
+      Followers
+    </h2>
+    <hr>
+      <p class="text-right">
+        No one is following you at the moment.
+      </p>
+    <hr>
+  </div>
+</div>
+
+
+
+
+<hr>

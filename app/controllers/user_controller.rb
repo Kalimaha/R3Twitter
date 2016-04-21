@@ -104,6 +104,11 @@ class UserController < ApplicationController
     params[:new_password] == params[:confirm_password]
   end
 
+  def create_following
+    puts params
+    redirect_to '/users/' + params[:first_user_id]
+  end
+
   def follow(user_id, following_id)
     @namespaced.zadd('following:' + user_id, DateTime.now.strftime('%Q'), following_id) &&
     @namespaced.zadd('followers:' + following_id, DateTime.now.strftime('%Q'), user_id)
@@ -115,6 +120,13 @@ class UserController < ApplicationController
 
   def get_followers(user_id)
     @namespaced.zrevrange('followers:' + user_id, 0, -1)
+  end
+
+  def list
+    ids = @namespaced.hvals('users')
+    @users = []
+    ids.each {|id| @users << get_user(id)}
+    @users
   end
 
 end
