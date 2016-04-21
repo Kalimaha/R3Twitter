@@ -2,46 +2,53 @@ require 'redis'
 
 class UserController < ApplicationController
 
-  attr_reader :redis
+  attr_reader :namespaced
 
   skip_before_filter :verify_authenticity_token
 
   def initialize
     super
     @redis = Redis.new
+    @namespaced = Redis::Namespace.new(:production, :redis => @redis)
+  end
+
+  def use_test_db
+    @namespaced = Redis::Namespace.new(:test, :redis => @redis)
   end
 
   def index
   end
 
   def flushdb
-    @redis.flushdb
+    keys = @namespaced.keys('*')
+    @namespaced.del(*keys) unless keys.empty?
+    'OK'
   end
 
   def get_id
-    @redis.get('user_id') != nil ? @redis.get('user_id') : get_next_id
+    @namespaced.get('user_id') != nil ? @namespaced.get('user_id') : get_next_id
   end
 
   def get_next_id
-    @redis.incr 'user_id'
+    @namespaced.incr 'user_id'
   end
 
   def create_user(user)
     user_id = get_next_id
-    @redis.hset('users', user['username'], user_id)
-    @redis.mapped_hmset(user_id, user)
+    @namespaced.hset('users', user['username'], user_id)
+    @namespaced.mapped_hmset(user_id, user)
   end
 
   def exists?(username)
-    @redis.hget('users', username) != nil
+    @namespaced.hget('users', username) != nil
   end
 
   def get_user_id(username)
-    @redis.hget('users', username)
+    @namespaced.hget('users', username)
   end
 
   def get_user(user_id)
-    @redis.hgetall(user_id)
+    @namespaced.hgetall(user_id)
   end
 
   def login

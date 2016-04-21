@@ -31,6 +31,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Redis
 gem 'redis', '~>3.2'
 
+# Redis namespace
+gem 'redis-namespace', '~> 1.5', '>= 1.5.2'
+
 # Coveralls
 gem 'coveralls', require: false
 
