@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   # Registration rout
   post '/register', to: 'user#register'
 
+  # Timeline
+  get '/tweets/:username', to: 'tweet#retrieve'
+
 end

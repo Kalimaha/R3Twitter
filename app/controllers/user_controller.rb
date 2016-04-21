@@ -56,6 +56,7 @@ class UserController < ApplicationController
     if valid_login_params?(params)
       if exists?(params[:username])
         @user = get_user(get_user_id(params[:username]))
+        redirect_to '/tweets/' + @user['username']
       else
         flash[:error] = "User <i>#{params[:username]}</i> does NOT exists. Please register."
         redirect_to '/'
