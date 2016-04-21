@@ -11,5 +11,7 @@ Rails.application.routes.draw do
 
   # Timeline
   get '/tweets/:username', to: 'tweet#retrieve'
+  get '/tweets/:username/new', to: 'tweet#new'
+  post '/create/tweet/:username', to: 'tweet#create'
 
 end

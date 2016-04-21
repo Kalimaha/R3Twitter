@@ -8,6 +8,17 @@ class TweetController < UserController
     @namespaced.incr 'tweet_id'
   end
 
+  def new
+    @username = params[:username]
+  end
+
+  def create
+    puts params
+    tweet = {body: params[:message]}
+    create_tweet(params[:username], tweet)
+    redirect_to '/tweets/' + params[:username]
+  end
+
   def create_tweet(username, tweet)
     user_id = get_user_id(username)
     tweet['user_id'] = user_id

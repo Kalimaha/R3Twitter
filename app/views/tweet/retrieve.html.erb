@@ -1,14 +1,14 @@
 <div class="row">
   <div class="col-lg-6 col-xs-12">
     <h1>
-      <i class="fa fa-twitter"></i> Tweets for <%= @username %>
+      <i class="fa fa-twitter"></i> <%= @username %>'s timeline
     </h1>
   </div>
   <div class="col-lg-6 col-xs-12">
     <h1>
-    <button class="btn btn-primary pull-right">
-      <i class="fa fa-magic"></i> New Tweet
-    </button>
+      <button class="btn btn-primary pull-right" href="/tweets/new">
+        <i class="fa fa-magic"></i> New Tweet
+      </button>
     </h1>
   </div>
 </div>
@@ -16,7 +16,25 @@
 <hr>
 
 <% if @tweets.length > 0 %>
-
+  <% @tweets.each do |t| %>
+    <div class="row">
+      <div class="col-lg-4 col-xs-12">&nbsp;</div>
+      <div class="col-lg-4 col-xs-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <%= t['username'] %>
+          </div>
+          <div class="panel-body">
+            <%= t['body'] %>
+          </div>
+          <div class="panel-footer text-right">
+            <%= Date.strptime((t['time'].to_f / 1000).to_s, '%s').strftime('%d %b %Y') %>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-xs-12">&nbsp;</div>
+    </div>
+  <% end %>
 <% else %>
   <h2 class="text-center">
     There are yet no tweets to display.
