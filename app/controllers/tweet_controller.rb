@@ -46,7 +46,11 @@ class TweetController < UserController
     user_id = get_user_id(username)
     @tweets = []
     tweet_ids = @namespaced.lrange('tweets:' + user_id, 0, -1)
-    tweet_ids.each {|id| @tweets << @namespaced.hgetall(id)}
+    tweet_ids.each do |id|
+        tweet = @namespaced.hgetall(id)
+        tweet['username'] = get_user(tweet['user_id'])['username']
+        @tweets << tweet
+    end
     @tweets
   end
 

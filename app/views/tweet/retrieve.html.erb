@@ -39,14 +39,14 @@
         <% @tweets.each do |t| %>
             <div class="row">
               <div class="col-xs-12">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">
+                <div class="tweet">
+                  <div class="tweet-header">
                     <i class="fa fa-twitter"></i> <%= t['username'] %>
                   </div>
-                  <div class="panel-body">
+                  <div class="tweet-body">
                     <%= t['body'] %>
                   </div>
-                  <div class="panel-footer text-right">
+                  <div class="tweet-footer">
                     <%= Date.strptime((t['time'].to_f / 1000).to_s, '%s').strftime('%d %b %Y') %>
                   </div>
                 </div>
@@ -66,7 +66,9 @@
     <hr>
       <% if @following.length > 0 %>
         <% @following.each do |f| %>
-          <p><%= f['username'] %>
+          <p>
+            <%= link_to f['username'], '/tweets/' + f['username'] %>
+          </p>
         <% end %>
       <% else %>
         <p class="text-right">
@@ -80,7 +82,9 @@
     <hr>
       <% if @followers.length > 0 %>
         <% @followers.each do |f| %>
-          <p><%= f['username'] %>
+          <p>
+            <%= link_to f['username'], '/tweets/' + f['username'] %>
+          </p>
         <% end %>
       <% else %>
         <p class="text-right">
