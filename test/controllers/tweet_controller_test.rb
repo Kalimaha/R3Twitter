@@ -4,13 +4,13 @@ class TweetControllerTest < ActionController::TestCase
 
   def setup
     @user_ctrl = UserController.new
-    @tweet_ctrl = TweetController.new
     @user_ctrl.use_test_db
-    @tweet_ctrl.use_test_db
     @user_ctrl.flushdb
+    @tweet_ctrl = TweetController.new
+    @tweet_ctrl.use_test_db
     @tweet_ctrl.flushdb
     @tweet_1 = {body: 'Hello, World!'}
-    @user_1 = {username: 'kalimaha', password: '12345678'}
+    @user_1 = {username: 'pippo', password: '12345678'}
   end
 
   def test_flushdb

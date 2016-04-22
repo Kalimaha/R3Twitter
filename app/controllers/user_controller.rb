@@ -5,8 +5,6 @@ class UserController < ApplicationController
 
   include UserHelper
 
-  skip_before_filter :verify_authenticity_token
-
   def index
   end
 

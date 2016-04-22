@@ -2,9 +2,13 @@ module ApplicationHelper
 
   attr_reader :namespaced
 
-  def initialize
-    @redis = Redis.new
-    @namespaced = Redis::Namespace.new(:production, :redis => @redis)
+  @redis = nil
+
+  @namespaced = nil
+
+  def init_redis
+    @redis = Redis.new if @redis == nil
+    @namespaced = Redis::Namespace.new(:production, :redis => @redis) if @namespaced == nil
   end
 
   def use_test_db
