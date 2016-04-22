@@ -44,7 +44,7 @@
                     <i class="fa fa-twitter"></i> <%= t['username'] %>
                   </div>
                   <div class="tweet-body">
-                    <%= t['body'] %>
+                    <%= highlight(t['body']).html_safe %>
                   </div>
                   <div class="tweet-footer">
                     <%= Date.strptime((t['time'].to_f / 1000).to_s, '%s').strftime('%d %b %Y') %>
