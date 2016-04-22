@@ -15,7 +15,13 @@
     <% @users.each do |u| %>
       <tr>
         <td><%= link_to u['username'], '/tweets/' + u['username'] %></td>
-        <td><%= link_to 'Follow', '/' + u['user_id'] + '/follows/' + u['user_id'] %></td>
+          <% if params[:username] != u['username'] %>
+            <td>
+              <%= link_to 'Follow', '/' + @follower_id + '/follows/' + u['user_id'] %>
+            </td>
+          <% else %>
+            <td>That's you!</td>
+          <% end %>
       </tr>
     <% end %>
   </tbody>

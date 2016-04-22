@@ -105,8 +105,8 @@ class UserController < ApplicationController
   end
 
   def create_following
-    puts params
-    redirect_to '/users/' + params[:first_user_id]
+    follow(params[:first_user_id], params[:second_user_id])
+    redirect_to '/tweets/' + get_user(params[:first_user_id])['username']
   end
 
   def follow(user_id, following_id)
@@ -126,6 +126,7 @@ class UserController < ApplicationController
     ids = @namespaced.hvals('users')
     @users = []
     ids.each {|id| @users << get_user(id)}
+    @follower_id = get_user_id(params[:username])
     @users
   end
 

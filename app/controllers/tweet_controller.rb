@@ -33,7 +33,13 @@ class TweetController < UserController
 
   def retrieve
     @username = params[:username]
-    get_tweets(@username)
+    @tweets = get_tweets(@username)
+    followers_ids = get_followers(get_user_id(@username))
+    following_ids = get_following(get_user_id(@username))
+    @followers = []
+    @following = []
+    followers_ids.each {|id| @followers << get_user(id)}
+    following_ids.each {|id| @following << get_user(id)}
   end
 
   def get_tweets(username)
