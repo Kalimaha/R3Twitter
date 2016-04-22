@@ -22,6 +22,12 @@ module TweetHelper
     'OK'
   end
 
+  # Wrap _hashtags_ and _at_ references with HTML anchors.
+  #
+  # ==== Inputs
+  # * +message+ The original message.
+  # ==== Output
+  # * +message+ The modified message.
   def highlight(message)
     highlight_hashtags(message)
     highlight_at(message)
