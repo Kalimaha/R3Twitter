@@ -46,7 +46,7 @@ gem 'font-awesome-rails', '~> 4.1.0.0'
 
 # Development and Test environments.
 group :development, :test do
-  gem 'sqlite3'
+  # gem 'sqlite3'
   gem 'byebug'
 end
 

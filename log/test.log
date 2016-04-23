@@ -12545,3 +12545,239 @@ TweetControllerTest: test_get_next_id
 TweetControllerTest: test_redis
 -------------------------------
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (13.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (737.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (259.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (61.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160418083005')
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+UserControllerTest: test_get_followers
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 898ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UserControllerTest: test_valid_login_params
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------
+UserControllerTest: test_get_next_id
+------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------
+UserControllerTest: test_redis
+------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+UserControllerTest: test_get_following
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------
+UserControllerTest: test_exists?
+--------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------
+UserControllerTest: test_get_user
+---------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+UserControllerTest: test_valid_registration_params
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------
+UserControllerTest: test_flushdb
+--------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------
+UserControllerTest: test_follow
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------
+UserControllerTest: test_get_id
+-------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 1513ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------
+UserControllerTest: test_create_user
+------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------
+UserControllerTest: test_get_user_id
+------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+--------------------------------
+UserControllerTest: test_flushdb
+--------------------------------
+---------------------------------
+UserControllerTest: test_get_user
+---------------------------------
+-------------------------------
+UserControllerTest: test_follow
+-------------------------------
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 1910ms
+------------------------------------
+UserControllerTest: test_get_user_id
+------------------------------------
+-------------------------------------------
+UserControllerTest: test_valid_login_params
+-------------------------------------------
+------------------------------
+UserControllerTest: test_redis
+------------------------------
+------------------------------------
+UserControllerTest: test_get_next_id
+------------------------------------
+--------------------------------------
+UserControllerTest: test_get_followers
+--------------------------------------
+--------------------------------------------------
+UserControllerTest: test_valid_registration_params
+--------------------------------------------------
+------------------------------------
+UserControllerTest: test_create_user
+------------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/tweets/pippo
+Completed 302 Found in 1522ms
+-------------------------------
+UserControllerTest: test_get_id
+-------------------------------
+--------------------------------
+UserControllerTest: test_exists?
+--------------------------------
+--------------------------------------
+UserControllerTest: test_get_following
+--------------------------------------

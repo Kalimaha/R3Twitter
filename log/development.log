@@ -27116,3 +27116,51 @@ Processing by TweetController#retrieve as HTML
   Parameters: {"username"=>"kalimaha"}
   Rendered tweet/retrieve.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 118ms (Views: 103.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-23 10:12:57 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+Completed 500 Internal Server Error in 924ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tweet_controller.rb:29:in `+'
+  app/controllers/tweet_controller.rb:29:in `get_tweets'
+  app/controllers/tweet_controller.rb:17:in `retrieve'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.2ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (161.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 10:13:06 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 221ms (Views: 219.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2016-04-23 10:13:08 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 966ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 10:13:09 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.0ms)
