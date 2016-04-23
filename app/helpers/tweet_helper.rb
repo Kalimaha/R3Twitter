@@ -12,6 +12,9 @@ module TweetHelper
 
   def create_tweet(username, tweet)
     user_id = get_user_id(username)
+    puts "Username? #{username}"
+    puts "User ID? #{user_id}"
+    puts "Tweet? #{tweet}"
     tweet['user_id'] = user_id
     tweet['time'] = DateTime.now.strftime('%Q')
     tweet_id = get_next_id
