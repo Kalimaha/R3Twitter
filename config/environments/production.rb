@@ -74,6 +74,9 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  # Do not dump schema after migrations.
-  # config.active_record.dump_schema_after_migration = false
+  # Rails instance
+  config.x.redis.host = 'ec2-54-227-252-91.compute-1.amazonaws.com'
+  config.x.redis.port = 15059
+  config.x.redis.password = 'pfggp9e08scbba7dd4nvc488u2f'
+
 end

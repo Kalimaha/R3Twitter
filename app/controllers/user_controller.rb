@@ -10,11 +10,11 @@ class UserController < ApplicationController
 
   def login
     if valid_login_params?(params)
-      if exists?(params[:username])
-        @user = get_user(get_user_id(params[:username]))
-        redirect_to '/tweets/' + @user['username']
+      if exists?(params[:username].downcase)
+        @user = get_user(get_user_id(params[:username].downcase))
+        redirect_to '/tweets/' + @user['username'].downcase
       else
-        flash[:error] = "User <i>#{params[:username]}</i> does NOT exists. Please register."
+        flash[:error] = "User <i>#{params[:username].downcase}</i> does NOT exists. Please register."
         redirect_to '/'
       end
     else
@@ -26,7 +26,7 @@ class UserController < ApplicationController
   def register
     if valid_registration_params?(params)
       user = Hash.new
-      user['username'] = params[:new_username]
+      user['username'] = params[:new_username].downcase
       user['password'] = params[:new_password]
       if create_user(user) == 'OK'
         flash[:success] = 'Registration complete, please login.'
@@ -52,7 +52,7 @@ class UserController < ApplicationController
     ids = @namespaced.hvals('users')
     @users = []
     ids.each {|id| @users << get_user(id)}
-    @follower_id = get_user_id(params[:username])
+    @follower_id = get_user_id(params[:username].downcase)
     @users
   end
 
