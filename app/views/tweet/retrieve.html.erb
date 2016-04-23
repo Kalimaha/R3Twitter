@@ -64,38 +64,35 @@
       Following
     </h2>
     <hr>
-      <% if @following.length > 0 %>
+    <% if @following.length > 0 %>
         <% @following.each do |f| %>
-          <p>
-            <%= link_to f['username'], '/tweets/' + f['username'] %>
-          </p>
+            <p>
+              <%= link_to f['username'], '/tweets/' + f['username'] %>
+            </p>
         <% end %>
-      <% else %>
+    <% else %>
         <p class="text-right">
           You are not following any user.
         </p>
-      <% end %>
+    <% end %>
     <hr>
     <h2 class="text-right">
       Followers
     </h2>
     <hr>
-      <% if @followers.length > 0 %>
+    <% if @followers.length > 0 %>
         <% @followers.each do |f| %>
-          <p>
-            <%= link_to f['username'], '/tweets/' + f['username'] %>
-          </p>
+            <p>
+              <%= link_to f['username'], '/tweets/' + f['username'] %>
+            </p>
         <% end %>
-      <% else %>
+    <% else %>
         <p class="text-right">
           You are not following any user.
         </p>
-      <% end %>
+    <% end %>
     <hr>
   </div>
 </div>
-
-
-
 
 <hr>

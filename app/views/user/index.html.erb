@@ -11,15 +11,15 @@
 <!-- Display error messages, if any. -->
 <div class="row">
   <% flash.each do |key, value| %>
-    <% if key == 'error' %>
-      <div class="alert alert-danger">
-        <strong>Error:</strong> <%= value.html_safe %>
-      </div>
-    <% else %>
-      <div class="alert alert-success">
-        <strong>Success:</strong> <%= value.html_safe %>
-      </div>
-    <% end %>
+      <% if key == 'error' %>
+          <div class="alert alert-danger">
+            <strong>Error:</strong> <%= value.html_safe %>
+          </div>
+      <% else %>
+          <div class="alert alert-success">
+            <strong>Success:</strong> <%= value.html_safe %>
+          </div>
+      <% end %>
   <% end %>
 </div>
 

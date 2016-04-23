@@ -30,19 +30,19 @@ module UserHelper
 
   def valid_login_params?(params)
     params[:username] != nil &&
-    params[:username].length > 0 &&
-    params[:password] != nil &&
-    params[:password].length > 0
+        params[:username].length > 0 &&
+        params[:password] != nil &&
+        params[:password].length > 0
   end
 
   def valid_registration_params?(params)
     params[:new_username] != nil &&
-    params[:new_username].length > 0 &&
-    params[:new_password] != nil &&
-    params[:new_password].length > 0 &&
-    params[:confirm_password] != nil &&
-    params[:confirm_password].length > 0 &&
-    params[:new_password] == params[:confirm_password]
+        params[:new_username].length > 0 &&
+        params[:new_password] != nil &&
+        params[:new_password].length > 0 &&
+        params[:confirm_password] != nil &&
+        params[:confirm_password].length > 0 &&
+        params[:new_password] == params[:confirm_password]
   end
 
   def follow(user_id, following_id)
