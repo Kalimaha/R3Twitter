@@ -35,4 +35,10 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Rails instance
+  config.x.redis.host = 'localhost'
+  config.x.redis.port = 6379
+  config.x.redis.password = nil
+
 end

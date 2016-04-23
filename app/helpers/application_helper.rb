@@ -7,9 +7,9 @@ module ApplicationHelper
   @namespaced = nil
 
   def init_redis
-    @redis = Redis.new(:host => 'ec2-54-227-252-91.compute-1.amazonaws.com',
-                       :port => 15059,
-                       :password => 'pfggp9e08scbba7dd4nvc488u2f') if @redis == nil
+    @redis = Redis.new(:host => Rails.configuration.x.redis.host,
+                       :port => Rails.configuration.x.redis.port,
+                       :password => Rails.configuration.x.redis.password) if @redis == nil
     @namespaced = Redis::Namespace.new(:production, :redis => @redis) if @namespaced == nil
   end
 
