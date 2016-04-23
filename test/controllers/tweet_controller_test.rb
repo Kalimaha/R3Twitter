@@ -4,10 +4,10 @@ class TweetControllerTest < ActionController::TestCase
 
   def setup
     @user_ctrl = UserController.new
-    @user_ctrl.use_test_db
+    @user_ctrl.init_redis
     @user_ctrl.flushdb
     @tweet_ctrl = TweetController.new
-    @tweet_ctrl.use_test_db
+    @tweet_ctrl.init_redis
     @tweet_ctrl.flushdb
     @tweet_1 = {body: 'Hello, World!'}
     @user_1 = {username: 'pippo', password: '12345678'}
@@ -18,7 +18,7 @@ class TweetControllerTest < ActionController::TestCase
   end
 
   def test_redis
-    assert_not_nil @tweet_ctrl.namespaced
+    assert_not_nil @tweet_ctrl.redis
   end
 
   def test_get_id

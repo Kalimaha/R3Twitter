@@ -4,7 +4,7 @@ class UserControllerTest < ActionController::TestCase
 
   def setup
     @ctrl = UserController.new
-    @ctrl.use_test_db
+    @ctrl.init_redis
     @ctrl.flushdb
     @user_1 = {username: 'pippo', password: '12345678'}
     @user_2 = {username: 'pluto', password: '87654321'}
@@ -15,7 +15,7 @@ class UserControllerTest < ActionController::TestCase
   end
 
   def test_redis
-    assert_not_nil @ctrl.namespaced
+    assert_not_nil @ctrl.redis
   end
 
   def test_get_id

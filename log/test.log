@@ -904,3 +904,537 @@ TweetControllerTest: test_get_tweets
 --------------------------------
 TweetControllerTest: test_get_id
 --------------------------------
+--------------------------------
+UserControllerTest: test_flushdb
+--------------------------------
+-------------------------------
+UserControllerTest: test_follow
+-------------------------------
+------------------------------------
+UserControllerTest: test_get_user_id
+------------------------------------
+--------------------------------------------------
+UserControllerTest: test_valid_registration_params
+--------------------------------------------------
+------------------------------------
+UserControllerTest: test_create_user
+------------------------------------
+------------------------------------
+UserControllerTest: test_get_next_id
+------------------------------------
+-------------------------------
+UserControllerTest: test_get_id
+-------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+---------------------------------
+UserControllerTest: test_get_user
+---------------------------------
+------------------------------
+UserControllerTest: test_redis
+------------------------------
+--------------------------------------
+UserControllerTest: test_get_following
+--------------------------------------
+--------------------------------------
+UserControllerTest: test_get_followers
+--------------------------------------
+-------------------------------------------
+UserControllerTest: test_valid_login_params
+-------------------------------------------
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+--------------------------------
+UserControllerTest: test_exists?
+--------------------------------
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+--------------------------------------
+UserControllerTest: test_get_following
+--------------------------------------
+-------------------------------
+UserControllerTest: test_get_id
+-------------------------------
+--------------------------------
+UserControllerTest: test_exists?
+--------------------------------
+-------------------------------------------
+UserControllerTest: test_valid_login_params
+-------------------------------------------
+---------------------------------
+UserControllerTest: test_get_user
+---------------------------------
+--------------------------------------------------
+UserControllerTest: test_valid_registration_params
+--------------------------------------------------
+------------------------------------
+UserControllerTest: test_get_next_id
+------------------------------------
+--------------------------------
+UserControllerTest: test_flushdb
+--------------------------------
+------------------------------------
+UserControllerTest: test_create_user
+------------------------------------
+------------------------------
+UserControllerTest: test_redis
+------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 5ms
+------------------------------------
+UserControllerTest: test_get_user_id
+------------------------------------
+-------------------------------
+UserControllerTest: test_follow
+-------------------------------
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+--------------------------------------
+UserControllerTest: test_get_followers
+--------------------------------------
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+--------------------------------------
+UserControllerTest: test_get_following
+--------------------------------------
+--------------------------------
+UserControllerTest: test_exists?
+--------------------------------
+------------------------------------
+UserControllerTest: test_get_next_id
+------------------------------------
+--------------------------------------------------
+UserControllerTest: test_valid_registration_params
+--------------------------------------------------
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+-------------------------------------------
+UserControllerTest: test_valid_login_params
+-------------------------------------------
+-------------------------------
+UserControllerTest: test_get_id
+-------------------------------
+------------------------------------
+UserControllerTest: test_get_user_id
+------------------------------------
+------------------------------
+UserControllerTest: test_redis
+------------------------------
+------------------------------------
+UserControllerTest: test_create_user
+------------------------------------
+--------------------------------
+UserControllerTest: test_flushdb
+--------------------------------
+-------------------------------
+UserControllerTest: test_follow
+-------------------------------
+--------------------------------------
+UserControllerTest: test_get_followers
+--------------------------------------
+---------------------------------
+UserControllerTest: test_get_user
+---------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+---------------------------------
+UserControllerTest: test_get_user
+---------------------------------
+-------------------------------
+UserControllerTest: test_get_id
+-------------------------------
+------------------------------------
+UserControllerTest: test_create_user
+------------------------------------
+--------------------------------------
+UserControllerTest: test_get_followers
+--------------------------------------
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+--------------------------------
+UserControllerTest: test_flushdb
+--------------------------------
+------------------------------------
+UserControllerTest: test_get_next_id
+------------------------------------
+------------------------------
+UserControllerTest: test_redis
+------------------------------
+--------------------------------------
+UserControllerTest: test_get_following
+--------------------------------------
+------------------------------------
+UserControllerTest: test_get_user_id
+------------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+--------------------------------
+UserControllerTest: test_exists?
+--------------------------------
+-------------------------------
+UserControllerTest: test_follow
+-------------------------------
+-------------------------------------------
+UserControllerTest: test_valid_login_params
+-------------------------------------------
+--------------------------------------------------
+UserControllerTest: test_valid_registration_params
+--------------------------------------------------
+-------------------------------------------
+UserControllerTest: test_valid_login_params
+-------------------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+--------------------------------------
+UserControllerTest: test_get_following
+--------------------------------------
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+---------------------------------
+UserControllerTest: test_get_user
+---------------------------------
+--------------------------------------------------
+UserControllerTest: test_valid_registration_params
+--------------------------------------------------
+-------------------------------
+UserControllerTest: test_get_id
+-------------------------------
+------------------------------------
+UserControllerTest: test_get_next_id
+------------------------------------
+--------------------------------------
+UserControllerTest: test_get_followers
+--------------------------------------
+------------------------------------
+UserControllerTest: test_get_user_id
+------------------------------------
+--------------------------------
+UserControllerTest: test_flushdb
+--------------------------------
+------------------------------
+UserControllerTest: test_redis
+------------------------------
+-------------------------------
+UserControllerTest: test_follow
+-------------------------------
+------------------------------------
+UserControllerTest: test_create_user
+------------------------------------
+--------------------------------
+UserControllerTest: test_exists?
+--------------------------------
+--------------------------------
+UserControllerTest: test_flushdb
+--------------------------------
+-------------------------------
+UserControllerTest: test_get_id
+-------------------------------
+------------------------------
+UserControllerTest: test_redis
+------------------------------
+------------------------------------
+UserControllerTest: test_create_user
+------------------------------------
+--------------------------------------
+UserControllerTest: test_get_followers
+--------------------------------------
+-------------------------------
+UserControllerTest: test_follow
+-------------------------------
+--------------------------------
+UserControllerTest: test_exists?
+--------------------------------
+------------------------------------
+UserControllerTest: test_get_user_id
+------------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+------------------------------------
+UserControllerTest: test_get_next_id
+------------------------------------
+--------------------------------------------------
+UserControllerTest: test_valid_registration_params
+--------------------------------------------------
+--------------------------------------
+UserControllerTest: test_get_following
+--------------------------------------
+-------------------------------------------
+UserControllerTest: test_valid_login_params
+-------------------------------------------
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+---------------------------------
+UserControllerTest: test_get_user
+---------------------------------
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+------------------------------------
+TweetControllerTest: test_get_tweets
+------------------------------------
+---------------------------------
+TweetControllerTest: test_flushdb
+---------------------------------
+-------------------------------
+TweetControllerTest: test_redis
+-------------------------------
+--------------------------------
+TweetControllerTest: test_get_id
+--------------------------------
+-------------------------------------
+TweetControllerTest: test_get_next_id
+-------------------------------------
+--------------------------------------
+TweetControllerTest: test_create_tweet
+--------------------------------------
