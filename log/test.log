@@ -4873,3 +4873,612 @@ ApplicationHelperTest: test_get_user
 ---------------------------------------
 ApplicationHelperTest: test_get_user_id
 ---------------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 3ms
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+-----------------------------------------------------
+ApplicationHelperTest: test_valid_registration_params
+-----------------------------------------------------
+--------------------------------
+ApplicationHelperTest: test_init
+--------------------------------
+----------------------------------
+ApplicationHelperTest: test_get_id
+----------------------------------
+----------------------------------
+ApplicationHelperTest: test_follow
+----------------------------------
+------------------------------------
+ApplicationHelperTest: test_get_user
+------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_highlight_hashtags
+----------------------------------------------
+-------------------------------------
+ApplicationHelperTest: test_highlight
+-------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_following
+-----------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_create_tweet
+----------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_user_id
+---------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_followers
+-----------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_valid_login_params
+----------------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_next_id
+---------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_highlight_at
+----------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_create_user
+---------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_exists?
+-----------------------------------
+-----------------------------------
+ApplicationHelperTest: test_flushdb
+-----------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+-----------------------------------------
+ApplicationHelperTest: test_get_following
+-----------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_user_id
+---------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_highlight_hashtags
+----------------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_create_tweet
+----------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_valid_login_params
+----------------------------------------------
+------------------------------------
+ApplicationHelperTest: test_get_user
+------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_create_user
+---------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_flushdb
+-----------------------------------
+----------------------------------
+ApplicationHelperTest: test_follow
+----------------------------------
+----------------------------------
+ApplicationHelperTest: test_get_id
+----------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_followers
+-----------------------------------------
+-------------------------------------
+ApplicationHelperTest: test_highlight
+-------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_next_id
+---------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_exists?
+-----------------------------------
+----------------------------------------
+ApplicationHelperTest: test_highlight_at
+----------------------------------------
+--------------------------------
+ApplicationHelperTest: test_init
+--------------------------------
+-----------------------------------------------------
+ApplicationHelperTest: test_valid_registration_params
+-----------------------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_following
+-----------------------------------------
+------------------------------------
+ApplicationHelperTest: test_get_user
+------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_highlight_hashtags
+----------------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_create_tweet
+----------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_valid_login_params
+----------------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_followers
+-----------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_exists?
+-----------------------------------
+--------------------------------
+ApplicationHelperTest: test_init
+--------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_next_id
+---------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_user_id
+---------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_flushdb
+-----------------------------------
+-------------------------------------
+ApplicationHelperTest: test_highlight
+-------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_highlight_at
+----------------------------------------
+----------------------------------
+ApplicationHelperTest: test_get_id
+----------------------------------
+-----------------------------------------------------
+ApplicationHelperTest: test_valid_registration_params
+-----------------------------------------------------
+----------------------------------
+ApplicationHelperTest: test_follow
+----------------------------------
+---------------------------------------
+ApplicationHelperTest: test_create_user
+---------------------------------------
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+----------------------------------------
+ApplicationHelperTest: test_create_tweet
+----------------------------------------
+--------------------------------
+ApplicationHelperTest: test_init
+--------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_highlight_hashtags
+----------------------------------------------
+-----------------------------------------------------
+ApplicationHelperTest: test_valid_registration_params
+-----------------------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_following
+-----------------------------------------
+-------------------------------------
+ApplicationHelperTest: test_highlight
+-------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_valid_login_params
+----------------------------------------------
+----------------------------------
+ApplicationHelperTest: test_get_id
+----------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_next_id
+---------------------------------------
+------------------------------------
+ApplicationHelperTest: test_get_user
+------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_create_user
+---------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_exists?
+-----------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_followers
+-----------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_highlight_at
+----------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_user_id
+---------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_flushdb
+-----------------------------------
+----------------------------------
+ApplicationHelperTest: test_follow
+----------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 7ms
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+---------------------------------------
+ApplicationHelperTest: test_get_next_id
+---------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_highlight_at
+----------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_highlight_hashtags
+----------------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_followers
+-----------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_user_id
+---------------------------------------
+-------------------------------------
+ApplicationHelperTest: test_highlight
+-------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_following
+-----------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_flushdb
+-----------------------------------
+---------------------------------------
+ApplicationHelperTest: test_create_user
+---------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_create_tweet
+----------------------------------------
+------------------------------------
+ApplicationHelperTest: test_get_user
+------------------------------------
+-----------------------------------------------------
+ApplicationHelperTest: test_valid_registration_params
+-----------------------------------------------------
+--------------------------------
+ApplicationHelperTest: test_init
+--------------------------------
+----------------------------------
+ApplicationHelperTest: test_get_id
+----------------------------------
+----------------------------------
+ApplicationHelperTest: test_follow
+----------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_valid_login_params
+----------------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_exists?
+-----------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_next_id
+---------------------------------------
+----------------------------------
+ApplicationHelperTest: test_get_id
+----------------------------------
+------------------------------------
+ApplicationHelperTest: test_get_user
+------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_user_id
+---------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_flushdb
+-----------------------------------
+---------------------------------------
+ApplicationHelperTest: test_create_user
+---------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_highlight_hashtags
+----------------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_highlight_at
+----------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_followers
+-----------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_following
+-----------------------------------------
+-------------------------------------
+ApplicationHelperTest: test_highlight
+-------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_valid_login_params
+----------------------------------------------
+-----------------------------------------------------
+ApplicationHelperTest: test_valid_registration_params
+-----------------------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_create_tweet
+----------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_exists?
+-----------------------------------
+----------------------------------
+ApplicationHelperTest: test_follow
+----------------------------------
+--------------------------------
+ApplicationHelperTest: test_init
+--------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+-----------------------------------
+ApplicationHelperTest: test_flushdb
+-----------------------------------
+-------------------------------------
+ApplicationHelperTest: test_highlight
+-------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_valid_login_params
+----------------------------------------------
+------------------------------------
+ApplicationHelperTest: test_get_user
+------------------------------------
+-----------------------------------------------------
+ApplicationHelperTest: test_valid_registration_params
+-----------------------------------------------------
+--------------------------------
+ApplicationHelperTest: test_init
+--------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_following
+-----------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_create_user
+---------------------------------------
+----------------------------------
+ApplicationHelperTest: test_follow
+----------------------------------
+----------------------------------------
+ApplicationHelperTest: test_highlight_at
+----------------------------------------
+-----------------------------------------
+ApplicationHelperTest: test_get_followers
+-----------------------------------------
+-----------------------------------
+ApplicationHelperTest: test_exists?
+-----------------------------------
+----------------------------------
+ApplicationHelperTest: test_get_id
+----------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_next_id
+---------------------------------------
+----------------------------------------------
+ApplicationHelperTest: test_highlight_hashtags
+----------------------------------------------
+---------------------------------------
+ApplicationHelperTest: test_get_user_id
+---------------------------------------
+----------------------------------------
+ApplicationHelperTest: test_create_tweet
+----------------------------------------
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms

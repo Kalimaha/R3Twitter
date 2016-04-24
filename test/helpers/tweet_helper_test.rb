@@ -42,7 +42,7 @@ class ApplicationHelperTest < ActionView::TestCase
 
   def test_create_tweet
     create_user(@user_1)
-    assert_equal 'OK', create_tweet('pippo', @tweet_1)
+    assert_equal 'OK', create_tweet('pippo', {body: 'Hello, World!'})
   end
 
 end
