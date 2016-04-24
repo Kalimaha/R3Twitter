@@ -26,19 +26,19 @@ class ApplicationHelperTest < ActionView::TestCase
   end
 
   def test_exists?
-    assert_not exists?(@user_1['username'])
+    assert_not exists?(@user_1[:username])
     create_user(@user_1)
-    assert exists?(@user_1['username'])
+    assert exists?(@user_1[:username])
   end
 
   def test_get_user_id
     create_user(@user_1)
-    assert_equal '1', get_user_id(@user_1['username'])
+    assert_equal '1', get_user_id(@user_1[:username])
   end
 
   def test_get_user
     create_user(@user_1)
-    user_id = get_user_id(@user_1['username'])
+    user_id = get_user_id(@user_1[:username])
     assert_equal '1', user_id
     user = get_user(user_id)
     assert_not_nil user
