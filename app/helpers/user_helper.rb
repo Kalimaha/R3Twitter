@@ -12,7 +12,7 @@ module UserHelper
 
   def create_user(user)
     user_id = get_next_id
-    @redis.hset('users', user['username'], user_id)
+    @redis.hset('users', user[:username], user_id)
     @redis.mapped_hmset(user_id, user)
   end
 

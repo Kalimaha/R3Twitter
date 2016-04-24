@@ -40,4 +40,9 @@ class ApplicationHelperTest < ActionView::TestCase
     assert_equal exp, highlight_at(msg)
   end
 
+  def test_create_tweet
+    create_user(@user_1)
+    assert_equal 'OK', create_tweet('pippo', @tweet_1)
+  end
+
 end
