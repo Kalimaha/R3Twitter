@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # Login route
   post '/login', to: 'user#login'
 
-  # Registration rout
+  # Registration route
   post '/register', to: 'user#register'
 
   # Timeline

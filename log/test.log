@@ -6094,3 +6094,50 @@ Processing by UserController#create_following as HTML
   Parameters: {"first_user_id"=>"1", "second_user_id"=>"2"}
 Redirected to http://test.host/tweets/pippo
 Completed 302 Found in 3ms
+--------------------------------
+TweetControllerTest: test_create
+--------------------------------
+Processing by TweetController#create as HTML
+  Parameters: {"username"=>"pippo"}
+Completed 500 Internal Server Error in 2ms
+-----------------------------
+TweetControllerTest: test_new
+-----------------------------
+-----------------------------
+TweetControllerTest: test_new
+-----------------------------
+--------------------------------
+TweetControllerTest: test_create
+--------------------------------
+Processing by TweetController#create as HTML
+  Parameters: {"tweet"=>{"body"=>"Hello, World!"}, "username"=>"pippo"}
+Completed 500 Internal Server Error in 2ms
+--------------------------------
+TweetControllerTest: test_create
+--------------------------------
+Processing by TweetController#create as HTML
+  Parameters: {"tweet"=>{"body"=>"Hello, World!", "user_id"=>"1"}, "username"=>"pippo"}
+Completed 500 Internal Server Error in 2ms
+-----------------------------
+TweetControllerTest: test_new
+-----------------------------
+--------------------------------
+TweetControllerTest: test_create
+--------------------------------
+Processing by TweetController#create as HTML
+  Parameters: {"tweet"=>{"body"=>"Hello, World!", "user_id"=>"1"}, "username"=>"pippo"}
+Redirected to http://test.host/tweets/pippo
+Completed 302 Found in 3ms
+-----------------------------
+TweetControllerTest: test_new
+-----------------------------
+--------------------------------
+TweetControllerTest: test_create
+--------------------------------
+Processing by TweetController#create as HTML
+  Parameters: {"tweet"=>{"body"=>"Hello, World!", "user_id"=>"1"}, "username"=>"pippo"}
+Redirected to http://test.host/tweets/pippo
+Completed 302 Found in 3ms
+-----------------------------
+TweetControllerTest: test_new
+-----------------------------
