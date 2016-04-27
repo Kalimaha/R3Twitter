@@ -16,6 +16,6 @@ Rails.application.routes.draw do
 
   # Users
   get '/users/:username', to: 'user#list'
-  get '/:first_user_id/follows/:second_user_id', to: 'user#create_following'
+  get '/create_following/:first_user_id/:second_user_id', to: 'user#create_following'
 
 end

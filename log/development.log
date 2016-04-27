@@ -988,3 +988,740 @@ Processing by TweetController#retrieve as HTML
   Parameters: {"username"=>"kalimaha"}
   Rendered tweet/retrieve.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 66ms (Views: 48.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-28 08:00:00 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.4ms)
+  Rendered user/_register.html.erb (0.4ms)
+  Rendered user/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 2538ms (Views: 2524.9ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-28 08:00:03 +1000
+
+
+Started POST "/login" for ::1 at 2016-04-28 08:00:06 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:00:06 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 29ms (Views: 28.8ms)
+
+
+Started POST "/register" for ::1 at 2016-04-28 08:00:15 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"kalimaha", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:00:15 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 65ms (Views: 64.5ms)
+
+
+Started POST "/login" for ::1 at 2016-04-28 08:00:17 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:00:18 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.1ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 46ms (Views: 45.4ms)
+
+
+Started POST "/register" for ::1 at 2016-04-28 08:00:30 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"kalimaha", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:00:30 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.1ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 56ms (Views: 55.3ms)
+
+
+Started POST "/login" for ::1 at 2016-04-28 08:00:32 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:00:32 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 45ms (Views: 44.2ms)
+
+
+Started POST "/login" for ::1 at 2016-04-28 08:01:39 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:01:39 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.1ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 56ms (Views: 54.9ms)
+
+
+Started POST "/register" for ::1 at 2016-04-28 08:02:25 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"kalimaha", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:02:25 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.1ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms)
+
+
+Started POST "/register" for ::1 at 2016-04-28 08:03:22 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"kalimaha", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:03:22 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.1ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 41ms (Views: 39.8ms)
+
+
+Started POST "/login" for ::1 at 2016-04-28 08:03:25 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/tweets/kalimaha
+Completed 302 Found in 7ms
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:03:25 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 113ms (Views: 97.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-28 08:03:47 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (1.2ms)
+  Rendered user/_register.html.erb (0.4ms)
+  Rendered user/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 52ms (Views: 51.4ms)
+
+
+Started POST "/register" for ::1 at 2016-04-28 08:03:53 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"orcrist", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:03:53 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.2ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 50ms (Views: 48.8ms)
+
+
+Started POST "/register" for ::1 at 2016-04-28 08:04:03 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"orcrist", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:04:03 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 55ms (Views: 53.9ms)
+
+
+Started POST "/login" for ::1 at 2016-04-28 08:04:08 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"orcrist", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/tweets/orcrist
+Completed 302 Found in 6ms
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:04:08 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 35.6ms)
+
+
+Started GET "/users/orcrist/" for ::1 at 2016-04-28 08:04:11 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered user/list.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    17:         <td><%= link_to u['username'], '/tweets/' + u['username'] %></td>
+    18:         <% if params[:username] != u['username'] %>
+    19:             <td>
+    20:               <%= link_to 'Follow', '/create_following/' + @follower_id + '/' + u['user_id'] %>
+    21:             </td>
+    22:         <% else %>
+    23:             <td>That's you!</td>
+  app/views/user/list.html.erb:20:in `+'
+  app/views/user/list.html.erb:20:in `block in _app_views_user_list_html_erb__1727850493773525584_70324445209380'
+  app/views/user/list.html.erb:15:in `each'
+  app/views/user/list.html.erb:15:in `_app_views_user_list_html_erb__1727850493773525584_70324445209380'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.8ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (100.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (208.4ms)
+
+
+Started GET "/users/orcrist/" for ::1 at 2016-04-28 08:04:12 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered user/list.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    17:         <td><%= link_to u['username'], '/tweets/' + u['username'] %></td>
+    18:         <% if params[:username] != u['username'] %>
+    19:             <td>
+    20:               <%= link_to 'Follow', '/create_following/' + @follower_id + '/' + u['user_id'] %>
+    21:             </td>
+    22:         <% else %>
+    23:             <td>That's you!</td>
+  app/views/user/list.html.erb:20:in `+'
+  app/views/user/list.html.erb:20:in `block in _app_views_user_list_html_erb__1727850493773525584_70324453687320'
+  app/views/user/list.html.erb:15:in `each'
+  app/views/user/list.html.erb:15:in `_app_views_user_list_html_erb__1727850493773525584_70324453687320'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.9ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (163.8ms)
+
+
+Started GET "/users/orcrist/" for ::1 at 2016-04-28 08:05:34 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered user/list.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    17:         <td><%= link_to u['username'], '/tweets/' + u['username'] %></td>
+    18:         <% if params[:username] != u['username'] %>
+    19:             <td>
+    20:               <%= link_to 'Follow', '/create_following/' + @follower_id + '/' + u['user_id'] %>
+    21:             </td>
+    22:         <% else %>
+    23:             <td>That's you!</td>
+  app/views/user/list.html.erb:20:in `+'
+  app/views/user/list.html.erb:20:in `block in _app_views_user_list_html_erb__1727850493773525584_70324431408040'
+  app/views/user/list.html.erb:15:in `each'
+  app/views/user/list.html.erb:15:in `_app_views_user_list_html_erb__1727850493773525584_70324431408040'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (162.9ms)
+
+
+Started GET "/users/orcrist/" for ::1 at 2016-04-28 08:05:34 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered user/list.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    17:         <td><%= link_to u['username'], '/tweets/' + u['username'] %></td>
+    18:         <% if params[:username] != u['username'] %>
+    19:             <td>
+    20:               <%= link_to 'Follow', '/create_following/' + @follower_id + '/' + u['user_id'] %>
+    21:             </td>
+    22:         <% else %>
+    23:             <td>That's you!</td>
+  app/views/user/list.html.erb:20:in `+'
+  app/views/user/list.html.erb:20:in `block in _app_views_user_list_html_erb__1727850493773525584_70324416254060'
+  app/views/user/list.html.erb:15:in `each'
+  app/views/user/list.html.erb:15:in `_app_views_user_list_html_erb__1727850493773525584_70324416254060'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.3ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (158.6ms)
+
+
+Started GET "/users/orcrist/" for ::1 at 2016-04-28 08:07:10 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered user/list.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    17:         <td><%= link_to u['username'], '/tweets/' + u['username'] %></td>
+    18:         <% if params[:username] != u['username'] %>
+    19:             <td>
+    20:               <%= link_to 'Follow', '/create_following/' + @follower_id + '/' + u['user_id'] %>
+    21:             </td>
+    22:         <% else %>
+    23:             <td>That's you!</td>
+  app/views/user/list.html.erb:20:in `+'
+  app/views/user/list.html.erb:20:in `block in _app_views_user_list_html_erb__1727850493773525584_70324416254060'
+  app/views/user/list.html.erb:15:in `each'
+  app/views/user/list.html.erb:15:in `_app_views_user_list_html_erb__1727850493773525584_70324416254060'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.1ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.2ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (158.2ms)
+
+
+Started GET "/users/orcrist/" for ::1 at 2016-04-28 08:09:27 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered user/list.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    17:         <td><%= link_to u['username'], '/tweets/' + u['username'] %></td>
+    18:         <% if params[:username] != u['username'] %>
+    19:             <td>
+    20:               <%= link_to 'Follow', '/create_following/' + @follower_id + '/' + u['user_id'] %>
+    21:             </td>
+    22:         <% else %>
+    23:             <td>That's you!</td>
+  app/views/user/list.html.erb:20:in `+'
+  app/views/user/list.html.erb:20:in `block in _app_views_user_list_html_erb__1727850493773525584_70324416254060'
+  app/views/user/list.html.erb:15:in `each'
+  app/views/user/list.html.erb:15:in `_app_views_user_list_html_erb__1727850493773525584_70324416254060'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.1ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (166.0ms)
+
+
+Started GET "/users/orcrist/" for ::1 at 2016-04-28 08:09:53 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered user/list.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (no implicit conversion of nil into String):
+    17:         <td><%= link_to u['username'], '/tweets/' + u['username'] %></td>
+    18:         <% if params[:username] != u['username'] %>
+    19:             <td>
+    20:               <%= link_to 'Follow', '/create_following/' + @follower_id + '/' + u['user_id'] %>
+    21:             </td>
+    22:         <% else %>
+    23:             <td>That's you!</td>
+  app/views/user/list.html.erb:20:in `+'
+  app/views/user/list.html.erb:20:in `block in _app_views_user_list_html_erb__1727850493773525584_70324416254060'
+  app/views/user/list.html.erb:15:in `each'
+  app/views/user/list.html.erb:15:in `_app_views_user_list_html_erb__1727850493773525584_70324416254060'
+
+
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.3ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.4ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/simona/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.8ms)
+
+
+Started GET "/users/orcrist/" for ::1 at 2016-04-28 08:10:10 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered user/list.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 87ms (Views: 74.6ms)
+
+
+Started GET "/assets/application.self-96deb0473715372db71f9f14d90e208737d6aa9895a5a7b49fcf2fde9e686769.css?body=1" for ::1 at 2016-04-28 08:10:11 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-28 08:10:11 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-28 08:10:11 +1000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-28 08:10:11 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-28 08:10:11 +1000
+
+
+Started GET "/" for ::1 at 2016-04-28 08:10:42 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.1ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 79ms (Views: 77.7ms)
+
+
+Started POST "/register" for ::1 at 2016-04-28 08:10:48 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"orcrist", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:10:48 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 31.7ms)
+
+
+Started POST "/login" for ::1 at 2016-04-28 08:10:50 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"orcrist", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/tweets/orcrist
+Completed 302 Found in 6ms
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:10:50 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 31.7ms)
+
+
+Started GET "/users/orcrist/" for ::1 at 2016-04-28 08:10:52 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered user/list.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 58ms (Views: 52.5ms)
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:10:55 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 40ms (Views: 32.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-28 08:10:57 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.1ms)
+  Rendered user/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 36ms (Views: 34.9ms)
+
+
+Started POST "/register" for ::1 at 2016-04-28 08:11:04 +1000
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"kalimaha", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms
+
+
+Started GET "/" for ::1 at 2016-04-28 08:11:04 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 30ms (Views: 29.5ms)
+
+
+Started POST "/login" for ::1 at 2016-04-28 08:11:09 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"kalimaha", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/tweets/kalimaha
+Completed 302 Found in 6ms
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:11:09 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 40.2ms)
+
+
+Started GET "/users/kalimaha/" for ::1 at 2016-04-28 08:11:11 +1000
+Processing by UserController#list as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered user/list.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 44ms (Views: 36.0ms)
+
+
+Started GET "/create_following/2/1" for ::1 at 2016-04-28 08:11:13 +1000
+Processing by UserController#create_following as HTML
+  Parameters: {"first_user_id"=>"2", "second_user_id"=>"1"}
+Redirected to http://localhost:3000/tweets/kalimaha
+Completed 302 Found in 10ms
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:11:13 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 32.9ms)
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:11:19 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 29.6ms)
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:11:36 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 38ms (Views: 29.5ms)
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:11:38 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 38ms (Views: 27.6ms)
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:11:39 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 40ms (Views: 30.6ms)
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:11:42 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 38ms (Views: 29.2ms)
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:11:44 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 30.1ms)
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:12:07 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 39ms (Views: 30.9ms)
+
+
+Started GET "/assets/application.self-96deb0473715372db71f9f14d90e208737d6aa9895a5a7b49fcf2fde9e686769.css?body=1" for ::1 at 2016-04-28 08:12:07 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-28 08:12:07 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-28 08:12:07 +1000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-28 08:12:07 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-28 08:12:07 +1000
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:12:10 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 47ms (Views: 39.1ms)
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:12:12 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 33.0ms)
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:13:10 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 53ms (Views: 43.4ms)
+
+
+Started GET "/assets/application.self-96deb0473715372db71f9f14d90e208737d6aa9895a5a7b49fcf2fde9e686769.css?body=1" for ::1 at 2016-04-28 08:13:10 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-28 08:13:10 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-28 08:13:10 +1000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-28 08:13:10 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-28 08:13:10 +1000
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:13:13 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 53ms (Views: 44.3ms)
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:13:16 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 27.1ms)
+
+
+Started GET "/tweets/kalimaha/new" for ::1 at 2016-04-28 08:13:17 +1000
+Processing by TweetController#new as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.0ms)
+
+
+Started POST "/create/tweet/kalimaha" for ::1 at 2016-04-28 08:13:31 +1000
+Processing by TweetController#create as HTML
+  Parameters: {"message"=>"Greetings from #Melbourne, #Australia!    ", "username"=>"kalimaha"}
+Redirected to http://localhost:3000/tweets/kalimaha
+Completed 302 Found in 12ms
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:13:31 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 56ms (Views: 42.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-28 08:14:04 +1000
+Processing by UserController#index as HTML
+  Rendered user/_login.html.erb (0.0ms)
+  Rendered user/_register.html.erb (0.0ms)
+  Rendered user/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 44ms (Views: 43.8ms)
+
+
+Started POST "/login" for ::1 at 2016-04-28 08:14:09 +1000
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"orcrist", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/tweets/orcrist
+Completed 302 Found in 6ms
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:14:09 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 40ms (Views: 30.5ms)
+
+
+Started GET "/tweets/kalimaha" for ::1 at 2016-04-28 08:14:14 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"kalimaha"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 42.3ms)
+
+
+Started GET "/tweets/orcrist" for ::1 at 2016-04-28 08:14:17 +1000
+Processing by TweetController#retrieve as HTML
+  Parameters: {"username"=>"orcrist"}
+  Rendered tweet/retrieve.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 33.1ms)
