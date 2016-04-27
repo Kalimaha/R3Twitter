@@ -12,6 +12,7 @@ class UserController < ApplicationController
     if valid_login_params?(params)
       if exists?(params[:username].downcase)
         @user = get_user(get_user_id(params[:username].downcase))
+        session[:username] = @user['username'].downcase
         redirect_to '/tweets/' + @user['username'].downcase
       else
         flash[:error] = "User <i>#{params[:username].downcase}</i> does NOT exists. Please register."
@@ -32,10 +33,6 @@ class UserController < ApplicationController
         flash[:success] = 'Registration complete, please login.'
         redirect_to '/'
         return
-      else
-        flash[:error] = 'Registration failed. Please try again.'
-        redirect_to '/'
-        return
       end
     else
       flash[:error] = 'Please enter an username, a password, and a matching confirmation password.'
@@ -49,7 +46,7 @@ class UserController < ApplicationController
   end
 
   def list
-    ids = @namespaced.hvals('users')
+    ids = @redis.hvals('users')
     @users = []
     ids.each {|id| @users << get_user(id)}
     @follower_id = get_user_id(params[:username].downcase)
