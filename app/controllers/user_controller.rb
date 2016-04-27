@@ -48,7 +48,11 @@ class UserController < ApplicationController
   def list
     ids = @redis.hvals('users')
     @users = []
-    ids.each {|id| @users << get_user(id)}
+    ids.each do |id|
+        user = get_user(id)
+        user['user_id'] = id
+        @users << user
+    end
     @follower_id = get_user_id(params[:username].downcase)
     @users
   end

@@ -14,19 +14,28 @@
   </div>
   <div class="col-lg-2">
     <h1>
-      <%= link_to '<i class="fa fa-magic"></i> New Tweet'.html_safe,
-                  '/tweets/' + @username + '/new',
-                  class: 'btn btn-primary pull-right',
-                  style: 'width: 100%;'%>
-    </h1>
-  </div>
-  <div class="col-lg-2">
-    <h1>
       <%= link_to '<i class="fa fa-users"></i> Show Users'.html_safe,
                   '/users/' + @username + '/',
                   class: 'btn btn-primary pull-right',
                   style: 'width: 100%;'%>
     </h1>
+  </div>
+  <div class="col-lg-2">
+    <% if session[:username] == @username %>
+      <h1>
+        <%= link_to '<i class="fa fa-magic"></i> New Tweet'.html_safe,
+                    '/tweets/' + @username + '/new',
+                    class: 'btn btn-primary pull-right',
+                    style: 'width: 100%;'%>
+      </h1>
+    <% else %>
+      <h1>
+        <%= link_to '<i class="fa fa-magic"></i> New Tweet'.html_safe,
+                    '/tweets/' + @username + '/new',
+                    class: 'btn btn-primary pull-right disabled',
+                    style: 'width: 100%;'%>
+      </h1>
+    <% end %>
   </div>
 </div>
 
