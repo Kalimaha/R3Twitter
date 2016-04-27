@@ -6047,3 +6047,50 @@ Processing by UserController#login as HTML
   Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
 Redirected to http://test.host/tweets/pippo
 Completed 302 Found in 2ms
+---------------------------------
+UserControllerTest: test_register
+---------------------------------
+Processing by UserController#register as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#register as HTML
+  Parameters: {"new_username"=>"pippo", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 2ms
+------------------------------
+UserControllerTest: test_login
+------------------------------
+Processing by UserController#login as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pippo", "password"=>"[FILTERED]"}
+Redirected to http://test.host/tweets/pippo
+Completed 302 Found in 2ms
+Processing by UserController#login as HTML
+  Parameters: {"username"=>"pluto", "password"=>"[FILTERED]"}
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+-----------------------------------------
+UserControllerTest: test_create_following
+-----------------------------------------
+Processing by UserController#create_following as HTML
+  Parameters: {"first_user_id"=>"1", "second_user_id"=>"2"}
+Redirected to http://test.host/tweets/pippo
+Completed 302 Found in 3ms

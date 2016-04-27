@@ -24,6 +24,9 @@ class UserControllerTest < ActionController::TestCase
     assert_redirected_to '/tweets/pippo'
     assert_not_nil session[:username]
     assert_equal @user_1[:username], session[:username]
+    post :login, {username: 'pluto', password: '12345678'}
+    assert_not_nil flash[:error]
+    assert_redirected_to '/'
   end
 
   def test_register
