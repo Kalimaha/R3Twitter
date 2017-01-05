@@ -75,8 +75,8 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Rails instance
-  config.x.redis.host = 'ec2-54-227-252-91.compute-1.amazonaws.com'
-  config.x.redis.port = 15059
-  config.x.redis.password = 'pfggp9e08scbba7dd4nvc488u2f'
+  config.x.redis.host = 'ec2-54-225-230-45.compute-1.amazonaws.com'
+  config.x.redis.port = 6609
+  config.x.redis.password = 'p10rc4irgfhuj8f2ivgq2ebviv9'
 
 end
